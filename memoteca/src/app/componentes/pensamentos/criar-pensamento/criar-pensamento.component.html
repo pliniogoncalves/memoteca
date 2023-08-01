@@ -65,7 +65,7 @@
     </section>
     <section class="acoes">
       <button (click)="CriarPensamento()" class="botao">Salvar</button>
-      <button (click)="cancelar()" class="botao">Cancelar</button>
+      <button [routerLink]="['/listarPensamento']" routerLinkActive="router-link-active"  (click)="cancelar()" class="botao">Cancelar</button>
     </section>
   </form>
 </section>
