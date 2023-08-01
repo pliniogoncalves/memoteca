@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { Pensamento } from '../pensamento';
 
 @Component({
   selector: 'app-criar-pensamento',
@@ -8,8 +9,8 @@ import { RouterLink } from '@angular/router';
 })
 export class CriarPensamentoComponent implements OnInit {
 
-  pensamento = {
-    id:'1',
+  pensamento: Pensamento = {
+    id:1,
     conteudo: '',
     autoria:'',
     modelo: 'modelo1'
